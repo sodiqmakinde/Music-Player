@@ -125,6 +125,12 @@ nav{
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+    .signup{
+        background-color: rgb(195, 49, 49);
+    }
+    .login{
+        border: 1px solid rgb(195, 49, 49);
+    }
     .form li{
         opacity: 0;
         width: 70%;
