@@ -41,6 +41,7 @@ nav{
 }
 
 .form{
+    width: 25%;
     display: flex;
     justify-content: space-around;
 }
@@ -77,18 +78,29 @@ nav{
     transition: all 0.3s ease;
 }
 
-
-
-@media(max-width:1025px){
-    .list{
+@media(max-width:769px){
+    .form{
         width: 30%;
     }
+}
+@media(min-width:1028px){
+    .form{
+        width: 18%;
+    }
+}
+@media(max-width:1024px){
+    
+   
     nav{
         margin: 0;
         background-color: #fff;
         width: 100%;
         height: 50px;
        
+    }
+    .headers-flex {
+        padding: 0px 50px;
+        
     }
 }
 /* ////////FOR ANDROID AND SMALL MOBILES */
@@ -115,7 +127,7 @@ nav{
         position: absolute; 
         right: 0px;
         height: 20vh;
-        top: 7vh;
+        top: 6.5vh;
         width: 40%;
         background-color: rgb(251, 251, 255);
         display: flex;
