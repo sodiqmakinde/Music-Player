@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/icons8-earbud-headphones-48.png">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -37,10 +38,33 @@
             </div>
         </nav><!--Navigation BarENDS-->
 
+        <div class="music-body">
+            <div class="music-container">  <!--/////Started the music here-->
+                <div class="music-info">
+                    <h4 id="title">Try Me</h4>
+                    <div class="progress-container">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <audio src="musics/Try Me.mp3" id="audio"></audio>
 
-        <div >  <!--/////Started the music here-->
-            
-        </div><!--/////Music ends here-->
+                <div class="img-container">
+                    <img src="images/Tems-Try-Me.jpg" alt="music-cover" id="cover"/>
+                </div>
+
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fa fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fa fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+            </div><!--/////Music ends here-->
+        </div>
     </section>
 
         
