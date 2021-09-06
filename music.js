@@ -10,10 +10,10 @@ const cover = document.querySelector("#cover")
 
 
 //song title
-const songs = ["Try Me","Kizz_Daniel_Lie","Ayar-starr_Bloddy Samaritan","Justin-Bieber_Loved By You","Pink_What About Us"]
+const songs = ["Try Me","Kizz_Daniel_Lie","Ayra-Starr-Bloody-Samaritan","Pink_What About Us","Ayra-Starr-Away"]
 
 //Keep track of songs
-let songIndex = 1
+let songIndex = 4
 
 //Initially Load songs info DOM
 loadSong(songs[songIndex])
