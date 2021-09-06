@@ -30,6 +30,7 @@ html{
     justify-content: space-between;
 }
 nav{
+    width: 100%;
     background-color: #fff;
     height: 50px;
     position: fixed;
@@ -40,11 +41,12 @@ nav{
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: rgb(14, 14, 34);
-}
+    color:#dc3545;
+    }
+
 
 .form{
-    width: 25%;
+    width: 22%;
     display: flex;
     justify-content: space-around;
 }
@@ -53,7 +55,7 @@ nav{
     padding-left: 20px;
 }
 .signup{
-    background-color: rgb(45, 83, 155);
+    background-color: #dc3545;
     padding-right: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -62,7 +64,7 @@ nav{
     color: #fff;
 }
 .login{
-    border: 1px solid rgb(45, 83, 155);
+    border: 1px solid #dc3545;
     padding-right: 23px;
     border-radius: 5px;
     cursor: pointer;
@@ -92,7 +94,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 170px;
+    padding-top: 220px;
 }
 
 .music-container{
@@ -129,7 +131,7 @@ nav{
 .action-btn{
     background-color: #fff;
     border: 0;
-    color: rgb(148, 41, 41);
+    color: #dc3545;
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -137,31 +139,33 @@ nav{
 
 }
 .action-btn-big{
-    color: rgb(230, 27, 27);
+    color: #dc3545;
     font-size: 30px;
 }
 .action-btn:focus{
     outline: 0;
 }
 .music-info{
-    background-color: ivory;
+    background-color: rgb(243, 243, 243);
     border-radius: 15px 15px 0 0;
     position: absolute;
+    filter: opacity(0.5);
     top: 0;
     left: 20px;
     width: calc(100% - 40px);
     opacity: 0;
     transform: translateY(0%);
     padding: 10px 10px 15px 120px;
-    transition: transform 0.3 ease-in, opacity 0.3s ease-in;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 .music-info h4{
     margin: 0;
 
 }
 .progress-container{
-    background: rgb(206, 57, 57);
+    background: #dc3545;
     border-radius: 5px;
+    font-weight: 900;
     cursor: pointer;
     margin: 10px 0;
     height: 4px;
@@ -169,10 +173,11 @@ nav{
     
 }
 .progress{
-    background-color: lavenderblush;
+    background-color: #edeff0;
     border-radius: 5px;
     height: 100%;
     width: 0%;
+    font-weight: 800;
     transition: width 0.2s linear;
 }
 
@@ -213,6 +218,10 @@ nav{
 /* ////////FOR ANDROID AND SMALL MOBILES */
 
 @media(max-width:608px){
+    .action-btn-big {
+        color: #dc3545;
+        font-size: 40px;
+    }
     body{
         overflow-x: hidden !important;
         position: relative;
@@ -244,11 +253,15 @@ nav{
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
+    .form li {
+    padding-left: 30px;
+    }
     .signup{
-        background-color: rgb(195, 49, 49);
+        background-color: #dc3545;
+        border: 1px solid transparent;
     }
     .login{
-        border: 1px solid rgb(195, 49, 49);
+        border: 1px solid #dc3545;
     }
     .form li{
         opacity: 0;

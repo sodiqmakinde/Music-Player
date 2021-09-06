@@ -10,8 +10,7 @@ const cover = document.querySelector("#cover")
 
 
 //song title
-const songs = ["Try Me","Kizz_Daniel_Lie","Ayra_Starr_-_Bloody_Samaritan"
-]
+const songs = ["Try Me","Kizz_Daniel_Lie","Ayar-starr_Bloddy Samaritan","Justin-Bieber_Loved By You","Pink_What About Us"]
 
 //Keep track of songs
 let songIndex = 1
