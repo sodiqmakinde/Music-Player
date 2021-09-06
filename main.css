@@ -37,7 +37,7 @@ html{
 }
 .headers-flex{
     width: 100%;
-    padding: 0px 100px;
+    padding: 0px 130px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -107,7 +107,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 33px;
+    padding-top: 45px;
 }
 
 .music-container{
@@ -158,7 +158,7 @@ nav{
 .action-btn:focus{
     outline: 0;
 }
-.music-info{
+.music-info {
     background-color: rgb(243, 243, 243);
     border-radius: 15px 15px 0 0;
     position: absolute;
@@ -168,12 +168,12 @@ nav{
     width: calc(100% - 40px);
     opacity: 0;
     transform: translateY(0%);
-    padding: 10px 10px 15px 120px;
+    padding: 12px 15px 15px 100px;
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
 }
 .music-info h4{
     margin: 0;
-
+    font-size: 17px;
 }
 .progress-container{
     background: darkred;
@@ -181,7 +181,7 @@ nav{
     font-weight: 900;
     cursor: pointer;
     margin: 10px 0;
-    height: 4px;
+    height: 6px;
     width: 100%;
     
 }
@@ -209,11 +209,36 @@ nav{
         width: 30%;
     }
 }
+
+
+/* ////DESKTOP ADJUSTMENT */
 @media(min-width:1028px){
     .form{
         width: 18%;
     }
+    .action-btn {
+      
+        font-size: 35px;
+       
+    }
+    .heading-text h1{
+        margin-top: 120px;
+    }
+    .desktop-banner-flex{
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .heading-text{
+        width: 30%;
+    }
+    .heading-text h1 {
+        font-size: 35px;
+    }
 }
+
+
+
 @media(max-width:1024px){
     
    
@@ -229,11 +254,23 @@ nav{
         
     }
 }
+
+
+
+
 /* ////////FOR ANDROID AND SMALL MOBILES */
 
 @media(max-width:608px){
-    .container{
+    .wrapper{
         padding: 0 35px;
+    }
+    .music-container{
+        padding: 20px 23px;
+    }
+    
+    .img-container img {
+        width: 90%;
+        height: 100px;
     }
     .action-btn-big {
         font-size: 40px;
@@ -270,7 +307,7 @@ nav{
         transition: transform 0.5s ease-in;
     }
     .form li {
-    padding-left: 30px;
+    padding-left: 20px;
     }
     .signup{
         background-color: darkred;
@@ -296,7 +333,7 @@ nav{
         background-color: darkred;
         border: 0;
         color: #fff;
-        font-size: 25px;
+        font-size: 28px;
         cursor: pointer;
         padding: 10px;
         margin: 0 8px;
