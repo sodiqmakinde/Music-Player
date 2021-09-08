@@ -212,7 +212,7 @@ nav{
 
 
 /* ////DESKTOP ADJUSTMENT */
-@media(min-width:1028px){
+@media(min-width:1024px){
     .form{
         width: 18%;
     }
