@@ -18,7 +18,7 @@ html{
     width: 100%;
     height: 100vh;
     background-position: center;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(images/nadine-shaabana-U_z9Y0rEIJc-unsplash.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(images/shubham-dhage-cHVJBvEp8OM-unsplash.jpg);
     background-size: cover;
   
 }
@@ -44,7 +44,6 @@ html{
 }
 nav{
     width: 100%;
-    background-color: #fff;
     height: 50px;
     position: fixed;
     padding-top: 10px;
@@ -58,15 +57,12 @@ nav{
     }
 
 
-.form{
-    width: 22%;
+.form {
+    width: 50%;
     display: flex;
     justify-content: space-around;
 }
-.form li{
-    
-    padding-left: 20px;
-}
+
 .signup{
     background-color: darkred;
     padding-right: 20px;
@@ -77,13 +73,24 @@ nav{
     color: #fff;
 }
 .login{
-    border: 1px solid darkred;
+    border: 1px solid transparent;
+    background-color: darkred;
     padding-right: 23px;
     border-radius: 5px;
     cursor: pointer;
 }
-.login a{
-    color: rgb(38, 38, 71);
+.heading-text p{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.login a {
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: 600;
 }
 .burger{
     display: none;
@@ -212,56 +219,46 @@ nav{
 
 
 /* ////DESKTOP ADJUSTMENT */
-@media(min-width:1024px){
-    .form{
-        width: 18%;
-    }
+@media(min-width:760px){
+   
     .action-btn {
         font-size: 35px; 
     }
     .heading-text h1{
         margin-top: 120px;
-    }
-    .desktop-banner-flex{
-        margin-top: 200px;
-        display: flex;
-        justify-content: space-around;
-    }
-    .heading-text{
-        width: 30%;
-    }
-    .heading-text h1 {
         font-size: 35px;
     }
-}
-
-
-
-@media(max-width:1024px){
+    .heading-text {
+        width: 50%;
+        padding: 90px 130px;
+    }
     
-   
-    nav{
-        margin: 0;
-        background-color: #fff;
-        width: 100%;
-        height: 50px;
-       
+    .form li {
+        color: #fff;
     }
-    .headers-flex {
-        padding: 0px 50px;
-        
-    }
+ 
 }
+
+
+
+
 
 
 
 
 /* ////////FOR ANDROID AND SMALL MOBILES */
 
-@media(max-width:608px){
+@media(max-width:700px){
+    nav{
+        background-color: #fff;
+    }
+    .login a {
+        padding-left: 0px;
+    }
     .wrapper{
         padding: 0 35px;
     }
+   
     .music-container{
         padding: 20px 23px;
     }
@@ -282,7 +279,7 @@ nav{
         width: 100%;
         height: 100vh;
         background-position: center;
-        background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url(images/omid-armin-tF-wSmez9ag-unsplash.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(images/hello-i-m-nik-5_ImgwicW_0-unsplash.jpg);
         background-size: cover;
         
     }
@@ -293,7 +290,8 @@ nav{
     .form{
         position: absolute; 
         right: 0px;
-        height: 20vh;
+        height: auto;
+        padding-bottom: 20px;
         top: 6.5vh;
         width: 40%;
         background-color: rgb(251, 251, 255);
@@ -305,7 +303,7 @@ nav{
         transition: transform 0.5s ease-in;
     }
     .form li {
-    padding-left: 20px;
+    padding-left: 12px;
     }
     .signup{
         background-color: darkred;
