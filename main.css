@@ -26,24 +26,22 @@ html{
 .heading-text h1 {
     text-transform: uppercase;
     color: white;
-    margin-top: 120px;
+    margin-top: 130px;
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 2px;
     padding-left: 10px;
-    border-left: 6px solid darkred;
+    border-left: 6px solid #07cb79;
 }
-.heading-text {
-    position: fixed;
-}
+
 .heading-text h1 span{
-    color: darkred;
+    color: #07cb79;
 }
 .heading-text button{
     margin-top: 50px;
     padding: 15px 10px ;
     font-size: 18px;
-    background-color: darkred;
+    background-color: #07cb79;
     border: 1px solid transparent;
     border-radius: 5px;
     color: #fff;
@@ -60,7 +58,6 @@ html{
 nav{
     width: 100%;
     height: 50px;
-    position: fixed;
     padding-top: 10px;
 }
 .logo h1{
@@ -68,7 +65,7 @@ nav{
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color:  darkred;
+    color:  #07cb79;
     }
 
 
@@ -79,7 +76,7 @@ nav{
 }
 
 .signup{
-    background-color: darkred;
+    background-color: #07cb79;
     padding-right: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -89,7 +86,7 @@ nav{
 }
 .login{
     border: 1px solid transparent;
-    background-color: darkred;
+    background-color: #07cb79;
     padding-right: 23px;
     border-radius: 5px;
     cursor: pointer;
@@ -134,7 +131,7 @@ nav{
 }
 
 .music-container{
-    background-color: darkred;
+    background-color: #07cb79;
     border-radius: 15px;
     display: flex;
     padding: 20px 30px;
@@ -165,7 +162,7 @@ nav{
     z-index: 1;
 }
 .action-btn{
-    background-color: darkred;
+    background-color: #07cb79;
     border: 0;
     color: #fff;
     font-size: 20px;
@@ -199,7 +196,7 @@ nav{
     font-size: 17px;
 }
 .progress-container{
-    background: darkred;
+    background: #07cb79;
     border-radius: 5px;
     font-weight: 900;
     cursor: pointer;
@@ -235,13 +232,15 @@ nav{
 
 
 /* ////DESKTOP ADJUSTMENT */
-@media(min-width:768px){
- 
+@media(min-width:991px){
+    .heading-text {
+        position: fixed;
+    }
     .action-btn {
         font-size: 35px; 
     }
     .heading-text h1{
-        margin-top: 0px;
+        margin-top: 50px;
         font-size: 35px;
         max-width: 400px;
     }
@@ -267,13 +266,13 @@ nav{
 
 @media(max-width:991px){
     nav{
-        background-color: #fff;
+        background-color: #07cb79;
     }
     .form{
         width: 30%;
     }
     .login a {
-        padding-left: 0px;
+        padding-left: 10px;
     }
     .wrapper{
         padding: 0 35px;
@@ -299,7 +298,7 @@ nav{
         width: 100%;
         height: 110vh;
         background-position: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(images/hello-i-m-nik-5_ImgwicW_0-unsplash.jpg);
+        /* background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url(images/hello-i-m-nik-5_ImgwicW_0-unsplash.jpg); */
         background-size: cover;
         background-attachment: fixed;
     }
@@ -312,30 +311,46 @@ nav{
         right: 0px;
         height: auto;
         padding-bottom: 20px;
-        top: 5vh;
+        top: 6.8vh;
         width: 40%;
         background-color: rgb(251, 251, 255);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateX(100%);
+        display: none;
         transition: transform 0.5s ease-in;
     }
     .form li {
-    padding-left: 12px;
-    color: #000;
+    
+       color: #000;
+    }
+
+    .form li:active{
+        border: 1px solid transparent;
+        background-color: #07cb79;
+        padding-right: 23px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: lowercase;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 15px;
+        
+        font-weight: 600;
     }
     .signup{
-        background-color: darkred;
+        background-color: #07cb79;
         border: 1px solid transparent;
     }
     .login{
-        border: 1px solid darkred;
+        border: 1px solid #07cb79;
     }
-    .form li{
+    .form li {
+        margin-left: 27px;
         opacity: 0;
-        width: 80%;
+        width: 75%;
         height: 30px;
         margin-top: 20px;
     }
@@ -343,11 +358,11 @@ nav{
         display: block;
     }
     .nav-active{
-        transform: translateX(0%);
+       display: block;
     }
 
     .action-btn{
-        background-color: darkred;
+        background-color: #07cb79;
         border: 0;
         color: #fff;
         font-size: 28px;
